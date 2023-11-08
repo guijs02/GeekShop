@@ -1,0 +1,18 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar e Executar GeekShopping.CupomAPI",
+            "command": "dotnet",
+            "type": "shell",
+            "args": ["run","--project","GeekShopping.CupomAPI/GeekShopping.CupomAPI.csproj"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

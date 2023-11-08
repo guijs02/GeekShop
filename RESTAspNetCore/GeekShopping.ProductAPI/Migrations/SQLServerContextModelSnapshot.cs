@@ -62,7 +62,7 @@ namespace GeekShopping.ProductAPI.Migrations
                             Id = 1,
                             Categoria = "t-shirt",
                             Descricao = "camisa legal",
-                            ImageURL = "ShoppingImages/13_dragon_ball.jpg",
+                            ImageURL = "/images\\13_dragon_ball.jpg",
                             Nome = "Dragon ball",
                             Preco = 15.90m
                         },
@@ -71,7 +71,7 @@ namespace GeekShopping.ProductAPI.Migrations
                             Id = 2,
                             Categoria = "t-shirt",
                             Descricao = "camisa legal",
-                            ImageURL = "ShoppingImages/12_gnu_linux.jpg",
+                            ImageURL = "/images\\11_mars.jpg",
                             Nome = "occupy mars",
                             Preco = 17.90m
                         },
@@ -80,7 +80,7 @@ namespace GeekShopping.ProductAPI.Migrations
                             Id = 3,
                             Categoria = "t-shirt",
                             Descricao = "camisa legal",
-                            ImageURL = "ShoppingImages/12_gnu_linux.jpg",
+                            ImageURL = "/images\\12_gnu_linux.jpg",
                             Nome = "GNU",
                             Preco = 18.95m
                         },
@@ -88,8 +88,8 @@ namespace GeekShopping.ProductAPI.Migrations
                         {
                             Id = 4,
                             Categoria = "mascara",
-                            Descricao = "mascara legal",
-                            ImageURL = "ShoppingImages/3_vader.jpg",
+                            Descricao = "mascara doida do dart vader",
+                            ImageURL = "/images\\3_vader.jpg",
                             Nome = "Dart vader",
                             Preco = 32.90m
                         },
@@ -98,9 +98,18 @@ namespace GeekShopping.ProductAPI.Migrations
                             Id = 5,
                             Categoria = "t-shirt",
                             Descricao = "camisa legal",
-                            ImageURL = "ShoppingImages/6_spacex.jpg",
+                            ImageURL = "/images\\6_spacex.jpg",
                             Nome = "SPACEX",
                             Preco = 10.90m
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Categoria = "moletom",
+                            Descricao = "camisa preta com detalhes em vermelho e preto",
+                            ImageURL = "/images\\8_moletom_cobra_kay.jpg",
+                            Nome = "Cobra Kai",
+                            Preco = 55.90m
                         });
                 });
 #pragma warning restore 612, 618

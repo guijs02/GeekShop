@@ -2,12 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\RESTAspNetCore",
-    "\\RESTAspNetCore\\GeekShopping.ProductAPI",
-    "\\RESTAspNetCore\\GeekShopping.Web\\Views\\Shared",
-    "\\RESTAspNetCore\\GeekShoppingProductAPI",
-    "\\RESTAspNetCore\\GeekShoppingProductAPI\\Controllers",
-    "\\RESTAspNetCore\\GeekShoppingProductAPI\\Models"
+    "\\RESTAspNetCore\\GeekShopping.IdentityServer",
+    "\\RESTAspNetCore\\GeekShopping.IdentityServer\\Views",
+    "\\RESTAspNetCore\\GeekShopping.IdentityServer\\Views\\Account",
+    "\\RESTAspNetCore\\GeekShopping.IdentityServer\\Views\\Account\\Create",
+    "\\RESTAspNetCore\\GeekShopping.ProductAPI"
   ],
-  "SelectedNode": "\\RESTAspNetCore\\GeekShopping.sln",
+  "SelectedNode": "\\RESTAspNetCore\\GeekShopping.IdentityServer\\Views",
   "PreviewInSolutionExplorer": false
 }

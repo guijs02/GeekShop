@@ -9,6 +9,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<IProductService, ProductService>(c =>
 c.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"])
 );
+builder.Services.AddHttpClient<ICartService, CartService>(c =>
+c.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CartAPI"])
+);
+builder.Services.AddHttpClient<ICupomService, CupomService>(c =>
+c.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CupomAPI"])
+);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

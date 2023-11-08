@@ -13,33 +13,33 @@ namespace GeekShopping.Web.Services
         {
             _http = http;
         }
-        public async Task<IEnumerable<ProductModel>> FinAllProducts()
+        public async Task<IEnumerable<ProductViewModel>> FinAllProducts()
         {
             var response = await _http.GetAsync(BasePath);
-            return await response.ReadContentAs<List<ProductModel>>();
+            return await response.ReadContentAs<List<ProductViewModel>>();
         }
-        public async Task<ProductModel> FindProductById(int id)
+        public async Task<ProductViewModel> FindProductById(int id)
         {
             var response = await _http.GetAsync($"{BasePath}/{id}");
-            return await response.ReadContentAs<ProductModel>();
+            return await response.ReadContentAs<ProductViewModel>();
         }
 
-        public async Task<ProductModel> CreateProduct(ProductModel product)
+        public async Task<ProductViewModel> CreateProduct(ProductViewModel product)
         {
             var response = await _http.PostAsJsonAsync(BasePath, product);
 
             if (response.IsSuccessStatusCode)
-                return await response.ReadContentAs<ProductModel>();
+                return await response.ReadContentAs<ProductViewModel>();
             else
                 throw new Exception(ERROR_API);
 
         }
-        public async Task<ProductModel> UpdateProduct(ProductModel product)
+        public async Task<ProductViewModel> UpdateProduct(ProductViewModel product)
         {
             var response = await _http.PutAsJson(BasePath, product);
 
             if (response.IsSuccessStatusCode)
-                return await response.ReadContentAs<ProductModel>();
+                return await response.ReadContentAs<ProductViewModel>();
             else
                 throw new Exception(ERROR_API);
         }
